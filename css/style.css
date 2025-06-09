@@ -1,8 +1,14 @@
-body{
+body {
     margin-top: 0px;
     margin-bottom: 0px;
     background-color: black;
     color: whitesmoke;
+}
+
+.fondo_expedition33 {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 
@@ -12,8 +18,7 @@ body{
 
 
 
-
-footer{
+footer {
     color: rgb(249, 200, 136);
     background-color: rgb(59, 26, 89);
     width: auto;
