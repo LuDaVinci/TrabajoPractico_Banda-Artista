@@ -86,9 +86,7 @@ position: fixed;
   border-bottom: 1px solid #444;
 }
 
-.menu-items li:last-child {
-  border-bottom: none;
-}
+
 
 .menu-items a {
   color: white;
@@ -102,7 +100,19 @@ position: fixed;
   display: flex;
 }
 
+.imagenes-dos {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 
+.imagenes-dos img {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+  box-shadow: 0 0 15px rgba(171, 207, 12, 0.1);
+}
 
 .contenedor_rosas{
     width: 50px;
