@@ -18,7 +18,7 @@ p {
 h2 {
   font-size: 45px;
   color: white;
-    text-decoration: underline;
+  text-decoration: underline;
 
 }
 
@@ -56,7 +56,6 @@ h2 {
   left: 0;
   z-index: 1;
 }
-
 
 .menu {
   position: absolute;
@@ -109,6 +108,7 @@ h2 {
   min-width: 180px;
   padding: 8px 0;
 }
+
 .menu-items li {
   list-style: none;
   border-bottom: 1px solid #4444449f;
@@ -137,6 +137,7 @@ h2 {
   padding-top: 0px;
   padding-bottom: 50px;
 }
+
 .imagenes-dos img {
   width: 100%;
   max-width: 50%;
@@ -150,12 +151,14 @@ h2 {
   justify-content: center;
   padding: 40px 20px;
 }
+
 .exp33_resumen {
   width: 550px;
   margin-bottom: 50px;
   margin-left: 30px;
   padding: 10px 10px 10px 10px;
 }
+
 .lumiere_img {
   display: flex;
   align-items: center;
@@ -172,7 +175,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto 10px auto;
+  margin: 40px auto 10px auto;
   width: 100%;
 }
 .lineadorada img {
@@ -181,12 +184,25 @@ h2 {
 }
 
 
+.lineadorada_ultima{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 70px auto 120px auto;
+  width: 100%;
+}
+.lineadorada_ultima img{
+  max-width: 1200px;
+  height: auto;
+}
+
 
 .trailer_section {
   margin-top: 5px;
   padding: 40px 20px;
   text-align: center;
 }
+
 .trailervideo_contenedor {
   display: flex;
   justify-content: center;
@@ -203,24 +219,83 @@ h2 {
   font-size: 18px;
   transition: color 0.3s ease;
 }
+
 .vermas:hover {
   color: #ffffff;
   text-decoration: underline;
 }
 
-
-
-.audio-section {
+.audio_section {
   padding: 40px 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.audio-section iframe {
+.audio_section iframe {
   max-width: 600px;
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* sombra dorada */
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+}
+
+.social_list {
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.social_list h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.social_iconos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.social_iconos a img {
+  width: auto;
+  height: 50px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.social_iconos a:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.titulo_artistas {
+  text-align: center;
+  margin: 40px 0 150px;
+}
+
+.artistas_grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 40px;
+}
+
+.artista {
+  width: 30%;
+  text-align: center;
+}
+
+.artista img {
+  width: 70%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+.artista figcaption {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 
