@@ -15,12 +15,18 @@ p {
   font-weight: 400;
 }
 
+h2 {
+  font-size: 45px;
+  color: white;
+}
+
 /* vw y vh para ancho y alto de pantalla */
 .video_fondo_div {
   position: relative;
   height: 100vh;
   overflow: hidden;
 }
+
 .video_fondo {
   position: absolute;
   width: 100%;
@@ -36,6 +42,7 @@ p {
   /*   filter: drop-shadow(0 0 1px rgba(212, 254, 0, 0.5)); */
   filter: saturate(170%);
 }
+
 .fondo_expedition33 {
   display: flex;
   justify-content: center;
@@ -55,12 +62,14 @@ p {
   right: 20px;
   z-index: 2;
 }
+
 .menu-icon {
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .menu-icon svg {
   transition: opacity 0.3s ease;
 }
@@ -69,6 +78,7 @@ p {
 #menu-toggle {
   display: none;
 }
+
 /* Ocultar ícono de cerrar por defecto */
 .icono-cerrar {
   display: none;
@@ -78,6 +88,7 @@ p {
 #menu-toggle:checked+.menu-icon .icono-abrir {
   display: none;
 }
+
 #menu-toggle:checked+.menu-icon .icono-cerrar {
   display: inline;
 }
@@ -100,15 +111,17 @@ p {
   list-style: none;
   border-bottom: 1px solid #4444449f;
 }
+
 .menu-items a {
   color: white;
   text-decoration: none;
   padding: 12px 16px;
   display: block;
 }
+
 .menu-items a:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  color: #FFD700; 
+  color: #FFD700;
 }
 
 /* Mostrar menú cuando se activa el checkbox */
@@ -135,40 +148,57 @@ p {
   justify-content: center;
   padding: 40px 20px;
 }
-
-.lumiere_img {
-  max-width: 600px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
-
 .exp33_resumen {
   width: 550px;
   margin-bottom: 50px;
   margin-left: 30px;
-  padding: 60px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
 }
-
 .lumiere_img {
   display: flex;
   align-items: center;
   margin-left: 50px;
   margin-top: 0px;
   width: 500px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(124, 165, 10, 0.3);
 }
 
 .lineadorada {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 60px auto;
+  margin: 60px auto 10px auto;
   width: 100%;
 }
-
 .lineadorada img {
   max-width: 1200px;
   height: auto;
+}
+
+
+
+.trailer_section {
+  margin-top: 5px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+
+.trailervideo_contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trailer_video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); /* suave sombra dorada */
 }
 
 footer {

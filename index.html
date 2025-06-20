@@ -15,72 +15,82 @@
 </head>
 
 <body>
-    <header>
-        <div class="video_fondo_div"><video class="video_fondo" src="./videos/2297636-hd_1920_1080_30fps.mp4" type="video/mp4" autoplay
-                loop></video>
+    <header></header>
+    <div class="video_fondo_div"><video class="video_fondo" src="./videos/2297636-hd_1920_1080_30fps.mp4"
+            type="video/mp4" autoplay loop></video>
+    </div>
+
+    <div>
+        <nav class="menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <!-- Icono de menú cerrado -->
+                <svg class="icono-abrir" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFFFFF">
+                    <path
+                        d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+                </svg>
+                <!-- Icono de menú abierto -->
+                <svg class="icono-cerrar" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
+                    width="40px" fill="#FFFFFF">
+                    <path
+                        d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
+                </svg>
+            </label>
+
+            <ul class="menu-items">
+                <li><a href="#Historia">Historia</a></li>
+                <li><a href="#">Trailes</a></li>
+                <li><a href="#">Musica</a></li>
+                <li><a href="#">Covers</a></li>
+                <li><a href="#">"Artistas"</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="fondo_expedition33"><img class="logo-exp33" src="./imagenes/Fondos/ClairObscur_Expedition33.PNG"
+            alt="enletras_doradasaparece_elnombrede_clairobscur_masgrandeesta_expedition33">
+    </div>
+    
+    <section class="imagenes-dos">
+        <img src="./imagenes/Fondos/rosasdoradas.JPEG" alt="fondonegro_rosasdoradas">
+        <img src="./imagenes/Fondos/rosasdoradas.JPEG" alt="fondonegro_rosasdoradas">
+    </section>
+
+    <section class="resumenyimg_section">
+        <div class="exp33_resumen">
+            <h2 id="Historia">Historia</h2>
+            <p> Ambientado en un entorno de fantasía oscura de la Belle Époque,
+                el juego sigue a los voluntarios de la Expedición 33 en su misión
+                de destruir a la Paintress, un ser que causa el Gommage anual, que elimina
+                a aquellos de edad decreciente o superior.
+            </p>
         </div>
+        <img class="lumiere_img" src="./imagenes/Elementos/lumiere.JPEG" alt="ciudad_en_ruinas">
 
-        <div>
-            <nav class="menu">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle" class="menu-icon">
-                    <!-- Icono de menú cerrado -->
-                    <svg class="icono-abrir" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
-                        width="40px" fill="#FFFFFF">
-                        <path
-                            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
-                    </svg>
-                    <!-- Icono de menú abierto -->
-                    <svg class="icono-cerrar" xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960"
-                        width="40px" fill="#FFFFFF">
-                        <path
-                            d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z" />
-                    </svg>
-                </label>
+    </section>
+    <div class="lineadorada">
+        <img src="./imagenes/Elementos/SeparadorDorado.SVG.svg" alt="lineadorada_conrombos">
+    </div>
 
-                <ul class="menu-items">
-                    <li><a href="#Historia">Historia</a></li>
-                    <li><a href="#">"Artistas"</a></li>
-                    <li><a href="#">Trailes</a></li>
-                    <li><a href="#">Musica</a></li>
-                    <li><a href="#">Covers</a></li>
-                </ul>
-            </nav>
+    <section class="trailer_section">
+        <h2>Trailers</h2>
+        <div class="trailervideo_contenedor">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ejgW-upPMgk?si=Pt45R-50mSSzme7k"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+    </section>
 
-        <div class="fondo_expedition33"><img class="logo-exp33" src="./imagenes/Fondos/ClairObscur_Expedition33.PNG"
-                alt="enletras_doradasaparece_elnombrede_clairobscur_masgrandeesta_expedition33">
-        </div>
-        <section class="imagenes-dos">
-            <img src="./imagenes/Fondos/rosasdoradas.JPEG" alt="fondonegro_rosasdoradas">
-            <img src="./imagenes/Fondos/rosasdoradas.JPEG" alt="fondonegro_rosasdoradas">
-        </section>
-        <section class="resumenyimg_section">
-            <div class="exp33_resumen">
-                <h2 id="Historia">Historia</h2>
-                <p> Ambientado en un entorno de fantasía oscura de la Belle Époque,
-                    el juego sigue a los voluntarios de la Expedición 33 en su misión
-                    de destruir a la Paintress, un ser que causa el Gommage anual, que elimina
-                    a aquellos de edad decreciente o superior.
-                </p>
-            </div>
-            <img class="lumiere_img" src="./imagenes/Elementos/lumiere.JPEG" alt="ciudad_en_ruinas">
-
-        </section>
-<div class="lineadorada">
-    <img src="./imagenes/Elementos/SeparadorDorado.SVG.svg" alt="lineadorada_conrombos">
-</div>
-
-        <article>
-
-        </article>
+    <div class="lineadorada">
+        <img src="./imagenes/Elementos/SeparadorDorado.SVG.svg" alt="lineadorada_conrombos">
+    </div>
 
 
 
 
 
-
-    </header>
     <footer>
         <ul>
             <li>Alumna:Lucia Piazzi</li>
