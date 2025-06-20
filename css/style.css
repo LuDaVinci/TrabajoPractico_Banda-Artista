@@ -4,6 +4,11 @@ body {
     background-color: black;
     color: whitesmoke;
 }
+
+main{
+  min-height: 400vh;
+}
+
 /* vw y vh para ancho y alto de pantalla */
 .video_fondo{
 position: fixed;
@@ -22,15 +27,86 @@ position: fixed;
   align-items: center;
   height: 100vh;
 }
-.contenedor_rosas{
-    width: 50px;
+
+
+
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-icon svg {
+  transition: opacity 0.3s ease;
+}
+
+/* Ocultar el checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Ocultar ícono de cerrar por defecto */
+.icono-cerrar {
+  display: none;
+}
+
+/* mostrar/ocultar íconos según estado del checkbox */
+#menu-toggle:checked + .menu-icon .icono-abrir {
+  display: none;
+}
+#menu-toggle:checked + .menu-icon .icono-cerrar {
+  display: inline;
+}
+
+/* Lista del menú */
+.menu-items {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-direction: column;
+  width: auto;               /* Elimina ancho fijo */
+  min-width: 180px;          /* Asegura que no sea muy chico */
+  padding: 8px 0;
+}
+
+.menu-items li {
+  list-style: none;
+  border-bottom: 1px solid #444;
+}
+
+.menu-items li:last-child {
+  border-bottom: none;
+}
+
+.menu-items a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 16px;
+  display: block;
+}
+
+/* Mostrar menú cuando se activa el checkbox */
+#menu-toggle:checked + .menu-icon + .menu-items {
+  display: flex;
 }
 
 
 
-
-
-
+.contenedor_rosas{
+    width: 50px;
+}
 
 footer {
     color: rgb(249, 200, 136);
@@ -39,4 +115,5 @@ footer {
     height: 100px;
     padding-top: 10px;
     padding-bottom: 10px;
+    position: sticky;
 }
