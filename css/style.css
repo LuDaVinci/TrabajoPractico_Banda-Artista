@@ -1,24 +1,30 @@
 body {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    background-color: black;
-    color: whitesmoke;
+  background-color: black;
+  color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-main{
+main {
   min-height: 400vh;
 }
 
+p {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+}
+
 /* vw y vh para ancho y alto de pantalla */
-.video_fondo{
-position: fixed;
+.video_fondo {
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;     
+  width: 100vw;
   height: 100vh;
-  /* Escala el video para cubrir toda la pantalla */    
-  object-fit: cover; 
-  z-index: -1;      
+  /* Escala el video para cubrir toda la pantalla */
+  object-fit: cover;
+  z-index: -1;
 }
 
 .fondo_expedition33 {
@@ -59,10 +65,11 @@ position: fixed;
 }
 
 /* mostrar/ocultar íconos según estado del checkbox */
-#menu-toggle:checked + .menu-icon .icono-abrir {
+#menu-toggle:checked+.menu-icon .icono-abrir {
   display: none;
 }
-#menu-toggle:checked + .menu-icon .icono-cerrar {
+
+#menu-toggle:checked+.menu-icon .icono-cerrar {
   display: inline;
 }
 
@@ -76,8 +83,10 @@ position: fixed;
   border-radius: 8px;
   overflow: hidden;
   flex-direction: column;
-  width: auto;               /* Elimina ancho fijo */
-  min-width: 180px;          /* Asegura que no sea muy chico */
+  width: auto;
+  /* Elimina ancho fijo */
+  min-width: 180px;
+  /* Asegura que no sea muy chico */
   padding: 8px 0;
 }
 
@@ -85,8 +94,6 @@ position: fixed;
   list-style: none;
   border-bottom: 1px solid #444;
 }
-
-
 
 .menu-items a {
   color: white;
@@ -96,7 +103,7 @@ position: fixed;
 }
 
 /* Mostrar menú cuando se activa el checkbox */
-#menu-toggle:checked + .menu-icon + .menu-items {
+#menu-toggle:checked+.menu-icon+.menu-items {
   display: flex;
 }
 
@@ -114,16 +121,39 @@ position: fixed;
   box-shadow: 0 0 15px rgba(171, 207, 12, 0.1);
 }
 
-.contenedor_rosas{
-    width: 50px;
+.resumenyimg_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.lumiere_img{  
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.exp33_resumen {
+width: 550px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  padding: 60px 10px 10px 10px;
+}
+.lumiere_img {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 0px;
+  width: 500px;
 }
 
+
 footer {
-    color: rgb(249, 200, 136);
-    background-color: rgb(59, 26, 89);
-    width: auto;
-    height: 100px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: sticky;
+  color: rgb(249, 200, 136);
+  background-color: rgb(59, 26, 89);
+  width: auto;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: sticky;
 }
