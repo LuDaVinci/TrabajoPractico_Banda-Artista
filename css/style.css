@@ -18,6 +18,8 @@ p {
 h2 {
   font-size: 45px;
   color: white;
+    text-decoration: underline;
+
 }
 
 /* vw y vh para ancho y alto de pantalla */
@@ -185,21 +187,42 @@ h2 {
   padding: 40px 20px;
   text-align: center;
 }
-
-
-
 .trailervideo_contenedor {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.trailer_video {
-  width: 80%;
-  max-width: 800px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3); /* suave sombra dorada */
+.vermas {
+  display: block;
+  text-align: right;
+  margin: 20px auto 0;
+  max-width: 80%;
+  color: #FFD700;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
 }
+.vermas:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+
+.audio-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.audio-section iframe {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); /* sombra dorada */
+}
+
 
 footer {
   color: rgb(249, 200, 136);
