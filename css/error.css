@@ -85,7 +85,7 @@ body{
 
 .mensaje {
   position: absolute;
-  left: 510px;
+  left: 500px;
   top: 30%;
   transform: translateY(-50%);
   color: #FFD700;
